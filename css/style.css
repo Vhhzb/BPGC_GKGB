@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --paper: #E4D9C0;
+  --card: #F1E9D6;
+  --ink: #1F2D28;
+  --ink-soft: #3C463F;
+  --sage: #5C7A5E;
+  --ochre: #C98A3E;
+  --rust: #9C4A36;
+  --line: rgba(31, 45, 40, 0.15);
+
+  --display: 'Fraunces', serif;
+  --body: 'Figtree', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(rgba(31,45,40,0.05) 1px, transparent 1px);
+  background-size: 22px 22px;
+  color: var(--ink);
+  font-family: var(--body);
+  line-height: 1.5;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ---------- Header ---------- */
+
+.site-header {
+  padding: 48px 24px 32px;
+  text-align: center;
+  border-bottom: 2px solid var(--line);
+  position: relative;
+}
+
+.site-header .eyebrow {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 10px;
+}
+
+.site-header h1 {
+  font-family: var(--display);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: clamp(36px, 6vw, 64px);
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.site-header p {
+  max-width: 520px;
+  margin: 0 auto;
+  color: var(--ink-soft);
+  font-size: 16px;
+}
+
+/* ---------- Grid of cards ---------- */
+
+.card-grid {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+.dog-card {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  display: block;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 1px 0 var(--line);
+}
+
+.dog-card:hover,
+.dog-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 24px -12px rgba(31,45,40,0.35);
+  outline: none;
+}
+
+.dog-card:focus-visible {
+  outline: 2px solid var(--sage);
+  outline-offset: 2px;
+}
+
+.dog-card .thumb {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--line);
+}
+
+.stamp {
+  position: absolute;
+  top: 12px;
+  right: -34px;
+  transform: rotate(38deg);
+  background: var(--rust);
+  color: var(--card);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.dog-card .info {
+  padding: 16px 18px 20px;
+}
+
+.dog-card h2 {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 2px;
+}
+
+.dog-card .nickname {
+  font-size: 13px;
+  color: var(--sage);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.dog-card .summary {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.dog-card .location {
+  margin-top: 12px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dog-card .location::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ochre);
+  display: inline-block;
+}
+
+/* ---------- Detail page ---------- */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 32px 0 0 24px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--sage);
+}
+
+.back-link:hover { text-decoration: underline; }
+
+.detail {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 24px 80px;
+}
+
+.detail-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.detail-header .eyebrow {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+
+.detail-header h1 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(34px, 6vw, 52px);
+  margin: 6px 0 4px;
+}
+
+.detail-header .nickname {
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 16px 0 0;
+}
+
+.tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid var(--sage);
+  color: var(--sage);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.hero-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  margin: 28px 0 6px;
+}
+
+.hero-caption {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-soft);
+  text-align: right;
+  margin: 0 0 32px;
+}
+
+.field-notes {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 28px 28px 24px;
+  position: relative;
+}
+
+.field-notes::before {
+  content: 'FIELD NOTES';
+  position: absolute;
+  top: -11px;
+  left: 24px;
+  background: var(--paper);
+  padding: 0 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--rust);
+}
+
+.field-notes p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 16px;
+}
+
+.gallery {
+  margin-top: 36px;
+}
+
+.gallery h3 {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid var(--line);
+}
+
+.paw-divider {
+  text-align: center;
+  color: var(--ochre);
+  letter-spacing: 14px;
+  margin: 40px 0;
+  font-size: 14px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 24px;
+  color: var(--ink-soft);
+  font-family: var(--body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dog-card { transition: none; }
+}

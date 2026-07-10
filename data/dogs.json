@@ -1,0 +1,60 @@
+[
+  {
+    "id": "bruno",
+    "name": "Bruno",
+    "nickname": "The Mess Regular",
+    "spottedAt": "Mess & Convo",
+    "tags": ["food-motivated", "very good boy", "brown coat"],
+    "summary": "Shows up at the mess like clockwork, every meal, no exceptions.",
+    "story": "Bruno has near-perfect attendance at the mess and considers every student a personal friend, especially the ones holding food. He's been a campus fixture for years, sleeps most afternoons on the Convo steps, and perks up the instant he hears a plate.",
+    "cover": "images/placeholders/placeholder-1.svg",
+    "photos": [
+      "images/placeholders/placeholder-1.svg",
+      "images/placeholders/placeholder-2.svg",
+      "images/placeholders/placeholder-3.svg"
+    ]
+  },
+  {
+    "id": "juno",
+    "name": "Juno",
+    "nickname": "Queen of the Quad",
+    "spottedAt": "Library Lawn",
+    "tags": ["napper", "gentle", "black & white"],
+    "summary": "Rules the library lawn from her favourite napping spot under the tree.",
+    "story": "Juno picked the shadiest patch of the library lawn years ago and has defended it ever since, mostly by napping on it. She's gentle with everyone who stops to say hi, and a small but loyal group of regulars bring her treats between classes.",
+    "cover": "images/placeholders/placeholder-2.svg",
+    "photos": [
+      "images/placeholders/placeholder-2.svg",
+      "images/placeholders/placeholder-4.svg"
+    ]
+  },
+  {
+    "id": "rocky",
+    "name": "Rocky",
+    "nickname": "The Escort",
+    "spottedAt": "Hostel Road",
+    "tags": ["walks with everyone", "loud bark", "loyal"],
+    "summary": "Will personally walk you from your hostel to the academic block.",
+    "story": "Rocky has appointed himself unofficial safety escort for the hostel road, especially late at night. He barks at scooters, ignores cats entirely, and will trot alongside anyone walking alone until they reach a lit-up building.",
+    "cover": "images/placeholders/placeholder-3.svg",
+    "photos": [
+      "images/placeholders/placeholder-3.svg",
+      "images/placeholders/placeholder-1.svg",
+      "images/placeholders/placeholder-4.svg"
+    ]
+  },
+  {
+    "id": "coco",
+    "name": "Coco",
+    "nickname": "The Shy One",
+    "spottedAt": "Amphitheatre",
+    "tags": ["shy", "warms up slowly", "golden coat"],
+    "summary": "Watches events from the back row of the amphitheatre before joining in.",
+    "story": "Coco takes her time trusting new people, but once she does, she's fiercely affectionate. She's usually found watching campus events from a safe distance before slowly working up the courage to come say hello.",
+    "cover": "images/placeholders/placeholder-4.svg",
+    "photos": [
+      "images/placeholders/placeholder-4.svg",
+      "images/placeholders/placeholder-2.svg"
+    ]
+  }
+]
