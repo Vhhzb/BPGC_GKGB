@@ -2,6 +2,12 @@
 // Everything reads from data/dogs.json, so adding a dog never requires
 // touching this file.
 
+// Preferred display order for zones on the homepage. Any zone found in
+// dogs.json that isn't listed here still shows up — just after these,
+// in the order it was first encountered. Edit this list to match your
+// campus's real areas.
+const ZONE_ORDER = ['A-Side', 'B-Side', 'C-Side', 'D-Side', 'SAC', 'Library'];
+
 async function loadDogs() {
   const res = await fetch('data/dogs.json');
   if (!res.ok) throw new Error('Could not load data/dogs.json');
@@ -14,16 +20,26 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
+function groupByZone(dogs) {
+  const groups = new Map();
+  dogs.forEach(dog => {
+    const zone = dog.zone || 'Other';
+    if (!groups.has(zone)) groups.set(zone, []);
+    groups.get(zone).push(dog);
+  });
+
+  const orderedZones = [
+    ...ZONE_ORDER.filter(z => groups.has(z)),
+    ...[...groups.keys()].filter(z => !ZONE_ORDER.includes(z))
+  ];
+
+  return orderedZones.map(zone => ({ zone, dogs: groups.get(zone) }));
+}
+
 // ---------- Homepage grid ----------
 
-function renderGrid(dogs) {
-  const grid = document.getElementById('grid');
-  if (!dogs.length) {
-    grid.innerHTML = `<div class="empty-state">No dogs added yet — add one in data/dogs.json.</div>`;
-    return;
-  }
-
-  grid.innerHTML = dogs.map(dog => `
+function dogCard(dog) {
+  return `
     <a class="dog-card" href="dog.html?id=${encodeURIComponent(dog.id)}">
       <span class="stamp">spotted</span>
       <img class="thumb" src="${escapeHtml(dog.cover)}" alt="${escapeHtml(dog.name)}" loading="lazy" />
@@ -34,6 +50,25 @@ function renderGrid(dogs) {
         <div class="location">${escapeHtml(dog.spottedAt)}</div>
       </div>
     </a>
+  `;
+}
+
+function renderGrid(dogs) {
+  const grid = document.getElementById('grid');
+  if (!dogs.length) {
+    grid.innerHTML = `<div class="empty-state">No dogs added yet — add one in data/dogs.json.</div>`;
+    return;
+  }
+
+  const zones = groupByZone(dogs);
+
+  grid.innerHTML = zones.map(({ zone, dogs }) => `
+    <section class="zone-section">
+      <h2 class="zone-heading"><span>${escapeHtml(zone)}</span></h2>
+      <div class="card-grid">
+        ${dogs.map(dogCard).join('')}
+      </div>
+    </section>
   `).join('');
 }
 
@@ -72,6 +107,50 @@ function renderDetail(dog) {
       <div class="gallery-grid">${gallery}</div>
     </div>
   `;
+
+  enableLightbox(detail);
+}
+
+// ---------- Lightbox (click a photo to view it large) ----------
+
+function ensureLightboxEl() {
+  let box = document.getElementById('lightbox');
+  if (box) return box;
+
+  box = document.createElement('div');
+  box.id = 'lightbox';
+  box.className = 'lightbox';
+  box.innerHTML = `
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img class="lightbox-img" alt="" />
+  `;
+  document.body.appendChild(box);
+
+  const close = () => box.classList.remove('open');
+  box.addEventListener('click', (e) => {
+    if (e.target === box || e.target.classList.contains('lightbox-close')) close();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
+  });
+
+  return box;
+}
+
+function openLightbox(src, alt) {
+  const box = ensureLightboxEl();
+  const img = box.querySelector('.lightbox-img');
+  img.src = src;
+  img.alt = alt || '';
+  box.classList.add('open');
+}
+
+function enableLightbox(container) {
+  const clickable = container.querySelectorAll('.hero-photo, .gallery-grid img');
+  clickable.forEach(img => {
+    img.classList.add('zoomable');
+    img.addEventListener('click', () => openLightbox(img.src, img.alt));
+  });
 }
 
 // ---------- Router ----------
