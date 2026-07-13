@@ -47,6 +47,23 @@
     ]
   },
   {
+    "id": "leo",
+    "name": "Leo",
+    "nickname": "Lord Smileyface, Folk",
+    "zone": "D-Side",
+    "spottedAt": "D-Side",
+    "tags": ["always smiling", "super friendly", "happiest boi"],
+    "summary": "The happiest boi in campus. Always smiling and is super friendly.",
+    "story": "The happiest boi in campus. Always smiling and is super friendly.",
+    "cover": "images/leo/1.jpeg",
+    "photos": [
+      "images/leo/1.jpeg",
+      "images/leo/2.jpeg",
+      "images/leo/3.jpeg",
+      "images/leo/4.jpeg"
+    ]
+  },
+  {
     "id": "coco",
     "name": "Coco",
     "nickname": "The Shy One",
