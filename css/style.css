@@ -34,39 +34,130 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
-/* ---------- Header ---------- */
+/* ---------- Header (Pokedex-style shell) ---------- */
 
 .site-header {
-  padding: 48px 24px 32px;
+  padding: 40px 20px 8px;
   text-align: center;
-  border-bottom: 2px solid var(--line);
+  border-bottom: none;
   position: relative;
 }
 
-.site-header .eyebrow {
+.dex-shell {
+  position: relative;
+  max-width: 620px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #E5423C, #C4211D);
+  border: 4px solid #7A1210;
+  border-radius: 30px 30px 18px 18px;
+  padding: 22px 22px 26px;
+  box-shadow:
+    0 10px 0 rgba(0,0,0,0.35),
+    inset 0 2px 0 rgba(255,255,255,0.25);
+}
+
+.dex-screw {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #8a8a8a, #2a2a2a 75%);
+  box-shadow: inset 0 0 0 1px #111;
+}
+.dex-screw-tl { top: 12px; left: 14px; }
+.dex-screw-tr { top: 12px; right: 14px; }
+.dex-screw-bl { bottom: 12px; left: 14px; }
+.dex-screw-br { bottom: 12px; right: 14px; }
+
+.dex-top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 6px 4px 18px;
+}
+
+.dex-lens {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: radial-gradient(circle at 35% 30%, #d3f3ff, #4db3e8 55%, #1a6693 100%);
+  border: 4px solid #f2fbff;
+  box-shadow:
+    0 0 0 4px #1c3d57,
+    0 0 0 6px rgba(0,0,0,0.25),
+    0 3px 5px rgba(0,0,0,0.4);
+}
+
+.dex-lens-shine {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.85);
+}
+
+.dex-lights {
+  display: flex;
+  gap: 9px;
+}
+
+.dex-light {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.4);
+}
+.dex-light.red { background: #FF6B5C; }
+.dex-light.yellow { background: #FFD84D; }
+.dex-light.green { background: #57D96A; }
+
+.dex-screen {
+  background: #17140F;
+  border: 4px solid #0C0A08;
+  border-radius: 10px;
+  padding: 22px 20px 26px;
+  box-shadow:
+    inset 0 0 0 3px #2A241C,
+    inset 0 6px 14px rgba(0,0,0,0.6);
+}
+
+.dex-screen .eyebrow {
   font-family: var(--mono);
   font-size: 17px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--sage);
+  color: #7CF29C;
   margin-bottom: 10px;
+  text-shadow: 0 0 6px rgba(124,242,156,0.5);
 }
 
-.site-header h1 {
+.dex-screen h1 {
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(20px, 4.2vw, 34px);
+  font-size: clamp(18px, 4vw, 30px);
   line-height: 1.6;
   margin: 0 0 16px;
   letter-spacing: 0.02em;
-  text-shadow: 2px 2px 0 rgba(0,0,0,0.35);
+  color: var(--ink);
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.5);
 }
 
-.site-header p {
-  max-width: 520px;
+.dex-screen p {
+  max-width: 480px;
   margin: 0 auto;
-  color: var(--ink-soft);
-  font-size: 20px;
+  color: #B9C9BC;
+  font-size: 19px;
+}
+
+@media (max-width: 480px) {
+  .dex-lens { width: 38px; height: 38px; }
+  .dex-light { width: 11px; height: 11px; }
+  .dex-top { gap: 12px; }
 }
 
 /* ---------- Grid of cards ---------- */
