@@ -63,6 +63,23 @@
       "images/placeholders/Leo/4.jpeg"
     ]
   },
+    {
+    "id": "satta",
+    "name": "Satta",
+    "nickname": "Pal",
+    "zone": "D-Side",
+    "spottedAt": "D-Mess and DH Hostels",
+    "tags": ["Anti-Rabies Vaccinated", "Neutered", "Very Friendly"],
+    "summary": "The Queen of D-side",
+    "story": "She's spent her whole life in and around DH4 and DH5. So she's grown up with the company of humans, other dogs and cats throughout. She loves all the attention she gets and is considered the pride of DH4. Even the security guards love her. She does get bullied a lot by the cats though. (Looking at you Chonks)",
+    "cover": "images/placeholders/Trump/1.jpg",
+    "photos": [
+      "images/placeholders/Trump/1.jpeg",
+      "images/placeholders/Trump/2.jpeg",
+      "images/placeholders/Trump/3.jpeg",
+      "images/placeholders/Trump/4.jpeg"
+    ]
+  },
   {
     "id": "coco",
     "name": "Coco",
