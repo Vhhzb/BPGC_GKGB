@@ -94,5 +94,20 @@
       "images/placeholders/placeholder-4.svg",
       "images/placeholders/placeholder-2.svg"
     ]
+  },
+  {
+    "id": "bhaturi",
+    "name": "Bhaturi",
+    "nickname": "🥔",
+    "zone": "A-Side",
+    "spottedAt": "SAC",
+    "tags": ["Chonky","Anti-Rabies Vaccinated", "Neutered", "Very Friendly"],
+    "summary": "And the cutest potato award goes to....",
+    "story": "She's big. She's cute. And she's very possessive of her hoomans. Bhaturi was born and brought up with 4 of her siblings in front of the library. She initially was the runt of the litter and was about half the size of her siblings. But now, she's one not-so-lean, not-at-all-mean orange machine. She loves getting attention from humans to the point where she'd get jealous if you pet other dogs. 10/10 cutie.",
+    "cover": "images/placeholders/Bhaturi/1.jpeg",
+    "photos": [
+      "images/placeholders/Bhaturi/2.jpeg",
+      "images/placeholders/Bhaturi/3.jpeg"
+    ]
   }
 ]
