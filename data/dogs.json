@@ -80,22 +80,7 @@
       "images/placeholders/Trump/4.jpeg"
     ]
   },
-  {
-    "id": "coco",
-    "name": "Coco",
-    "nickname": "The Shy One",
-    "zone": "C-Side",
-    "spottedAt": "Amphitheatre",
-    "tags": ["shy", "warms up slowly", "golden coat"],
-    "summary": "Watches events from the back row of the amphitheatre before joining in.",
-    "story": "Coco takes her time trusting new people, but once she does, she's fiercely affectionate. She's usually found watching campus events from a safe distance before slowly working up the courage to come say hello.",
-    "cover": "images/placeholders/placeholder-4.svg",
-    "photos": [
-      "images/placeholders/placeholder-4.svg",
-      "images/placeholders/placeholder-2.svg"
-    ]
-  },
-  {
+    {
     "id": "bhaturi",
     "name": "Bhaturi",
     "nickname": "🥔",
@@ -108,6 +93,21 @@
     "photos": [
       "images/placeholders/Bhaturi/2.jpeg",
       "images/placeholders/Bhaturi/3.jpeg"
+    ]
+  },
+   {
+    "id": "coco",
+    "name": "Coco",
+    "nickname": "The Shy One",
+    "zone": "C-Side",
+    "spottedAt": "Amphitheatre",
+    "tags": ["shy", "warms up slowly", "golden coat"],
+    "summary": "Watches events from the back row of the amphitheatre before joining in.",
+    "story": "Coco takes her time trusting new people, but once she does, she's fiercely affectionate. She's usually found watching campus events from a safe distance before slowly working up the courage to come say hello.",
+    "cover": "images/placeholders/placeholder-4.svg",
+    "photos": [
+      "images/placeholders/placeholder-4.svg",
+      "images/placeholders/placeholder-2.svg"
     ]
   }
 ]
