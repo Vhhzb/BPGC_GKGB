@@ -124,5 +124,21 @@
       "images/placeholders/Daisy/20241112_174219.jpg",
       "images/placeholders/Daisy/20241112_174316.jpg"
     ]
+  },
+  {
+    "id": "pixie",
+    "name": "Pixie",
+    "nickname": "Dharampal",
+    "zone": "A-Side",
+    "spottedAt": "SAC, AH9, nvm the whole of A-Side",
+    "tags": ["Anti-Rabies Vaccinated", "Neutered", "Very Friendly"],
+    "summary": "The most human doggo in campus",
+    "story": "Meet Pixie. She's around 4 years old. And is one of the most friendliest dogs in campus. You may spot her in LTs too. She probably has higher attendance than YOU. She's even got the sleep schedule of an average BITS-ian. She's an honorary member of every club and department that holds worksessions and GBMs outdoors. So next time you see here, give her a pat on the head out of respect (And love :) ).",
+    "cover": "images/placeholders/Pixie/20240216_143137.jpg",
+    "photos": [
+      "images/placeholders/Pixie/IMG_20251204_005415.jpg",
+      "images/placeholders/Pixie/IMG_20260130_222329.jpg",
+      "images/placeholders/Pixie/IMG_20260130_222337.jpg"
+    ]
   }
 ]
