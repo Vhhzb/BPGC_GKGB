@@ -118,11 +118,27 @@
     "spottedAt": "Library Lawns",
     "tags": ["Anti-Rabies Vaccinated", "Neutered", "Very Friendly"],
     "summary": "Therapist No: 1 at the library",
-    "story": "Had a long day of padhai? Say hi to bhondu. You probably know her from almost tripping over her at the baggage area. But as far as doggos go, she's an absolute ANGEL. She's spent her whole lofe living at the library with Bhondu and Macho, putting a smile on the faces of any passer-by who sees that pair of flip flop ears. Although maybe don't use a scooter or car in front of her. She'll chase after you like the subway surfers cop.",
+    "story": "Had a long day of padhai? Say hi to Daisy. You probably know her from almost tripping over her at the baggage area. But as far as doggos go, she's an absolute ANGEL. She's spent her whole lofe living at the library with Bhondu and Macho, putting a smile on the faces of any passer-by who sees that pair of flip flop ears. Although maybe don't use a scooter or car in front of her. She'll chase after you like the subway surfers cop.",
     "cover": "images/placeholders/Daisy/20231124_174052.jpg",
     "photos": [
       "images/placeholders/Daisy/20241112_174219.jpg",
       "images/placeholders/Daisy/20241112_174316.jpg"
+    ]
+  },
+  {
+    "id": "bhondu",
+    "name": "Bhondu",
+    "nickname": "Oops, I thogught she was Daisy",
+    "zone": "Library",
+    "spottedAt": "Library Lawns",
+    "tags": ["Anti-Rabies Vaccinated", "Neutered", "Very Friendly"],
+    "summary": "Therapist No: 2 at the library",
+    "story": "Had a long day of padhai? Say hi to bhondu. You probably also know her from nearly tripping over her at the library door. But she's got the sort of smile that can make all your worries disappear. She's also spent her whole life living at the library with Daisy and Macho, being one of the best sources of joy in an increasingly annoying world of padhai and homework. Again, maybe don't use a scooter or car in front of her. She'll join Daisy in hunting down the metallic foe.",
+    "cover": "images/placeholders/Bhondu/20241112_174421.jpg",
+    "photos": [
+      "images/placeholders/Bhondu/20240203_183706.jpg",
+      "images/placeholders/Bhondu/20241112_174346.jpg",
+      "images/placeholders/Bhondu//20240203_183721.jpg"
     ]
   },
   {
