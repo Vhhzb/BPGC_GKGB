@@ -109,5 +109,20 @@
       "images/placeholders/placeholder-4.svg",
       "images/placeholders/placeholder-2.svg"
     ]
+  },
+  {
+    "id": "daisy",
+    "name": "Daisy",
+    "nickname": "Oops, I thogught she was Bhondu",
+    "zone": "Library",
+    "spottedAt": "Library Lawns",
+    "tags": ["Anti-Rabies Vaccinated", "Neutered", "Very Friendly"],
+    "summary": "Therapist No: 1 at the library",
+    "story": "Had a long day of padhai? Say hi to bhondu. You probably know her from almost tripping over her at the baggage area. But as far as doggos go, she's an absolute ANGEL. She's spent her whole lofe living at the library with Bhondu and Macho, putting a smile on the faces of any passer-by who sees that pair of flip flop ears. Although maybe don't use a scooter or car in front of her. She'll chase after you like the subway surfers cop.",
+    "cover": "images/placeholders/Daisy/20231124_174052.jpg",
+    "photos": [
+      "images/placeholders/Daisy/20241112_174219.jpg",
+      "images/placeholders/Daisy/20241112_174316.jpg"
+    ]
   }
 ]
