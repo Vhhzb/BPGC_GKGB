@@ -81,6 +81,21 @@
     ]
   },
   {
+    "id": "cookie",
+    "name": "Cookie",
+    "nickname": "Pls Suggest :)",
+    "zone": "D-Side",
+    "spottedAt": "D-Mess and DH Hostels",
+    "tags": ["Anti-Rabies Vaccinated", "Neutered", "Tiny bit shy"],
+    "summary": "DH2's Guard",
+    "story": "Meet cookie. This lil' guy lives in D-side and roams all over the place. He was taken care of by the D-Mess workers and is a lil' bit scared of people. She will come to whoever she knows though.",
+    "cover": "images/placeholders/Cookie/1.jpeg",
+    "photos": [
+      "images/placeholders/Cookie/IMG_20250826_210002.jpg",
+      "images/placeholders/Cookie/IMG_20250926_133232.jpg"
+    ]
+  },
+  {
     "id": "bhaturi",
     "name": "Bhaturi",
     "nickname": "🥔",
@@ -139,6 +154,21 @@
       "images/placeholders/Bhondu/20240203_183706.jpg",
       "images/placeholders/Bhondu/20241112_174346.jpg",
       "images/placeholders/Bhondu//20240203_183721.jpg"
+    ]
+  },
+  {
+    "id": "macho",
+    "name": "Macho",
+    "nickname": "Library's Security Guard",
+    "zone": "Library",
+    "spottedAt": "Library Lawns",
+    "tags": ["Anti-Rabies Vaccinated", "Neutered", "Very Friendly"],
+    "summary": "Guardian of the Library",
+    "story": "Say hi to Macho. He's the ring leader of the Library Trio. He's super friendly and loves his humans. The same can't be said for scooters and cars. He'll lead Bhondu and Daisy into battle to scare away those metallic invaders. You'll find him outside the front door.",
+    "cover": "images/placeholders/Macho/20240428_174200.jpg",
+    "photos": [
+      "images/placeholders/Macho/20240516_174407.jpg",
+      "images/placeholders/Macho/20250721_124729.jpg"
     ]
   },
   {
