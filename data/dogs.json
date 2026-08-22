@@ -142,6 +142,54 @@
     ]
   },
   {
+    "id": "stella",
+    "name": "Stella",
+    "nickname": "AWWWWWWWWWWWWW",
+    "zone": "A-Side",
+    "spottedAt": "AH corridors",
+    "tags": ["Anti-Rabies Vaccinated", "Neutered", "Veeeeery Friendly"],
+    "summary": "Multicolored cuteness",
+    "story": "Meet Stella. She's new, and she's up for contention for one of the sweetest dogs in campus. She's got eyes that invite ambushes of pets and will instantly vanquish any sadness within you.",
+    "cover": "images/placeholders/Stella/WhatsApp Image 2026-08-21 at 23.58.43.jpeg",
+    "photos": [
+      "images/placeholders/Stella/WhatsApp Image 2026-08-21 at 23.52.28.jpeg",
+      "images/placeholders/Stella/WhatsApp Image 2026-08-21 at 23.53.10.jpeg",
+      "images/placeholders/Stella/WhatsApp Image 2026-08-21 at 23.58.45.jpeg",
+      "images/placeholders/Stella/WhatsApp Image 2026-08-21 at 23.58.33.jpeg"
+    ]
+  },
+  {
+    "id": "mickey",
+    "name": "Mickey",
+    "nickname": "Mickey Don, Tax collector, The DON",
+    "zone": "Library",
+    "spottedAt": "Literally the whole campus",
+    "tags": ["Anti-Rabies Vaccinated", "Neutered", "Friendly"],
+    "summary": "Victim of extreme gluttony",
+    "story": "He's a BIG BOY. And no wonder. You can find him at any of the eateries of our campus at any time. ALl that goes on inside his brain is the burning desire for food. He WILL give you the puppy eyes and will try every trick in the book to steal your meal. He's also got 6 toes on his back feet.",
+    "cover": "images/placeholders/Mickey/20250224_100704.jpg",
+    "photos": [
+      "images/placeholders/Mickey/IMG_20251109_103255.jpg",
+      "images/placeholders/Mickey/IMG_20260309_125647.jpg"
+    ]
+  },
+  {
+    "id": "percy",
+    "name": "Percy",
+    "nickname": "Suggest one :)",
+    "zone": "STP",
+    "spottedAt": "Mechanical Department/STP",
+    "tags": ["Anti-Rabies Vaccinated", "Neutered", "Very Friendly"],
+    "summary": "Tiniest ball of cuteness ever",
+    "story": "Say hi to Percy. He's a tiny lil' thing who spawned very recently inside campus. He's super super friendly and will do everything in his power to recieve pets from lucky hoomans that run into him. He's best friends with Jenny the Doberman.",
+    "cover": "images/placeholders/Percy/WhatsApp Image 2026-08-21 at 23.58.45.jpeg",
+    "photos": [
+      "images/placeholders/Percy/WhatsApp Image 2026-08-21 at 23.58.42.jpeg",
+      "images/placeholders/Percy/WhatsApp Image 2026-08-21 at 23.58.42 (1).jpeg",
+      "images/placeholders/Percy/WhatsApp Image 2026-08-21 at 23.58.41.jpeg"
+    ]
+  },
+  {
     "id": "pixie",
     "name": "Pixie",
     "nickname": "Dharampal",
